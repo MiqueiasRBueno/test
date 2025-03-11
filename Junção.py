@@ -1,0 +1,8 @@
+phrase = str('Curso em Vídeo Python')
+print(phrase)
+print('*'.join(phrase))
+print('-'.join(phrase))
+print('='.join(phrase))
+print('-'.join(phrase.split()))
+print(('*'.join(phrase.split())))
+print('\033[1;32m*\033[m'.join(phrase.split()))

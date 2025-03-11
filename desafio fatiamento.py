@@ -1,0 +1,8 @@
+name_full = str(input('Digite seu nome completo: ')).strip()
+name_replace = name_full.replace(' ', '')
+name_split = name_full.split()
+print('Nome em maiúsculo: ', name_full.upper())
+print('Nome em minúsculo: ', name_full.lower())
+print('Nome com ínicio maiúsculo: ', name_full.title())
+print(f'Total de letras do nome completo de {name_full.title()}: {len(name_replace)} letras')
+print(f'O primeiro nome de {name_full.title()} tem o total de {len(name_split[0])} letras')
