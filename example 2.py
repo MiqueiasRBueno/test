@@ -6,3 +6,4 @@ if mean >= 6:
     print('Sua nota foi boa, parabéns!')
 else:
     print('Sua nota foi ruim, estude mais!')
+print('Sua média foi boa, parabéns' if mean >= 6 else 'Sua média foi ruim, estude mais!')
