@@ -1,18 +1,18 @@
-galera = []
-dados = []
-while True:
-    dados.append(str(input('Nome: ')).title().strip())
-    dados.append(int(input('Idade: ')))
-    galera.append(dados[:])
-    dados.clear()
-    stop = ' '
-    while stop not in 'SN':
-        stop = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
-    if stop == 'N':
-        break
-print(galera)
-for p in galera:
-    if p[1] >= 21:
-        print(f'{p[0]} é o maior de idade!')
-    else:
-        print(f'{p[0]} é o menor de idade!')
+pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+print(pessoas)
+print(pessoas['nome'])
+print(pessoas['idade'])
+print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
+print(pessoas.keys())
+print(pessoas.values())
+print(pessoas.items())
+for k in pessoas.keys():
+    print(k)
+for v in pessoas.values():
+    print(v)
+for k, v in pessoas.items():
+    print(k, '=', v)
+del pessoas['sexo']
+print(pessoas)
+pessoas['nome'] = 'Leandro'
+print(pessoas)
