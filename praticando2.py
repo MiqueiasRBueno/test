@@ -12,5 +12,6 @@ print(f'''{'Valores Sorteados':^55}
 for k, v in jogadores.items():
     sleep(1)
     print(f'{f'{k}'.title()} tirou {v}')
-print(f'\033[1;33m{'-' * 55}\033[m')
-print(jogadores.values())
+print(f'''\033[1;33m{'-' * 55}\033[m
+{'RANKING DE JOGADORES':^55}
+\033[1;33m{'-' * 55}\033[m''')
