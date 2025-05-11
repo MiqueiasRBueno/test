@@ -20,5 +20,6 @@ print(f'''\033[1;31m{'=' * 55}\033[m
 sleep(1)
 ranking = (sorted(jogadores.items(), key=itemgetter(1), reverse=True))
 for i, v in enumerate(ranking):
+    sleep(1)
     print(f'{f'{i + 1}º Lugar:':<2} {f'{v[0]} com':-^40}{f'{v[1]}':->5}')
 print(f'\033[1;31m{'=' * 55}\033[m')
